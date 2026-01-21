@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* ============================= */
+/* 3D Floating Background Animations */
+/* ============================= */
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(12deg); }
+  50% { transform: translateY(-18px) rotate(12deg); }
+  100% { transform: translateY(0px) rotate(12deg); }
+}
+
+@keyframes floatSlow2 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-22px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatSlow3 {
+  0% { transform: translateY(0px) rotate(-12deg); }
+  50% { transform: translateY(-16px) rotate(-12deg); }
+  100% { transform: translateY(0px) rotate(-12deg); }
+}
+
+.animate-floatSlow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-floatSlow2 {
+  animation: floatSlow2 7s ease-in-out infinite;
+}
+
+.animate-floatSlow3 {
+  animation: floatSlow3 8s ease-in-out infinite;
+}
