@@ -272,14 +272,15 @@ Message: ${form.message ? form.message : "N/A"}`;
 
           {/* Map Embed */}
           <div className="h-[360px] bg-flyBg">
-            <iframe
-              title="Fly High Classes Map"
-              className="w-full h-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Gorakhpur%20Civil%20Lines&output=embed"
-            />
-          </div>
+  <iframe
+    title="Fly High Classes Location"
+    className="w-full h-full"
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps?q=26.78242204272838,83.38355219757061&output=embed"
+  />
+</div>
+
 
           {/* Quick FAQ */}
           <div className="p-6 md:p-8 border-t border-black/5">

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X, PhoneCall } from "lucide-react";
+import fhLogo from "../assets/images/fhlogo.png";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -31,15 +32,22 @@ export default function Navbar() {
       >
         <div className="container-max py-3 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-flyBlack grid place-items-center">
-              <span className="text-flyYellow font-extrabold text-lg">FH</span>
+            <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+              <img
+                src={fhLogo}
+                alt="Fly High Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
+
             <div className="leading-tight">
               <div className="font-extrabold text-lg">
                 <span className="text-flyBlack">Fly High</span>{" "}
                 <span className="text-flyYellow">Classes</span>
               </div>
-              <div className="text-xs text-black/60">IIT-JEE & NEET • Gorakhpur</div>
+              <div className="text-xs text-black/60">
+                EDUCATION GIVES YOU WINGS TO FLY
+              </div>
             </div>
           </Link>
 
@@ -51,7 +59,9 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   [
                     "text-sm font-semibold transition-colors",
-                    isActive ? "text-flyBlack" : "text-black/60 hover:text-flyBlack",
+                    isActive
+                      ? "text-flyBlack"
+                      : "text-black/60 hover:text-flyBlack",
                   ].join(" ")
                 }
               >
@@ -101,7 +111,9 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   [
                     "py-2 px-3 rounded-xl font-semibold",
-                    isActive ? "bg-flyYellow/20 text-flyBlack" : "text-black/70 hover:bg-black/5",
+                    isActive
+                      ? "bg-flyYellow/20 text-flyBlack"
+                      : "text-black/70 hover:bg-black/5",
                   ].join(" ")
                 }
               >

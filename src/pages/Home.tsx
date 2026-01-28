@@ -144,11 +144,11 @@ export default function Home() {
                 className="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-4 py-2 rounded-full mb-6"
               >
                 <span className="w-2 h-2 rounded-full bg-flyYellow" />
-                <span className="text-sm text-white/80">Gorakhpur • IIT-JEE & NEET Coaching</span>
+                <span className="text-sm text-white/80">Gorakhpur • </span>
               </motion.div>
 
               <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl font-extrabold leading-tight">
-                Crack <span className="text-flyYellow">IIT-JEE & NEET</span> with Expert Guidance
+                Crack <span className="text-flyYellow">ICSE-CBSE & UP</span> with Expert Guidance
               </motion.h1>
 
               <motion.p variants={fadeUp} className="mt-5 text-lg text-white/75">
