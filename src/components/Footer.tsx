@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-flyYellow">Fly High</span> Classes
             </h3>
             <p className="text-white/70 mt-3 leading-relaxed">
-              Premium coaching institute for IIT-JEE & NEET preparation in Gorakhpur.
+              Premium coaching institute for ICSE-CBSE & UP preparation in Gorakhpur.
               Weekly tests, doubt support and personal mentorship.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="space-y-3 text-white/75">
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-flyYellow mt-0.5" />
-                <p>Civil Lines, Gorakhpur, Uttar Pradesh</p>
+                <p>FCI Road, Ashok Nagar, Gorakhpur, Uttar Pradesh</p>
               </div>
               <a href="tel:+919956920614" className="flex items-center gap-2 hover:text-flyYellow">
                 <PhoneCall className="w-5 h-5 text-flyYellow" />

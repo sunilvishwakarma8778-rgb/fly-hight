@@ -27,17 +27,17 @@ const stats = [
 
 const courses = [
   {
-    title: "IIT-JEE",
+    title: "ICSE",
     sub: "11th • 12th • Dropper",
     points: ["PCM focused learning", "PYQs + sheets", "Mock tests", "Mentor support"],
   },
   {
-    title: "NEET",
+    title: "CBSE",
     sub: "11th • 12th • Dropper",
     points: ["NCERT focus", "PCB preparation", "Test discussion", "Doubt support"],
   },
   {
-    title: "Foundation",
+    title: "UP",
     sub: "Class 9th - 10th",
     points: ["Strong basics", "Board prep", "Olympiad support", "Early foundation"],
   },
@@ -300,12 +300,12 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Link
+                  {/* <Link
                     to="/courses"
                     className="mt-6 inline-flex w-full justify-center bg-flyBlack text-white px-5 py-3 rounded-2xl font-extrabold hover:bg-black/90 transition"
                   >
                     View Details
-                  </Link>
+                  </Link> */}
                 </div>
               </motion.div>
             ))}
