@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, PhoneCall, MapPin, MessageCircle } from "lucide-react";
+import { Instagram,Facebook,PhoneCall, MapPin, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (

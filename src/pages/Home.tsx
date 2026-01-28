@@ -25,42 +25,42 @@ const stats = [
   { value: 10, label: "Years Experience", suffix: "+" },
 ];
 
-const courses = [
-  {
-    title: "ICSE",
-    sub: "11th • 12th • Dropper",
-    points: ["PCM focused learning", "PYQs + sheets", "Mock tests", "Mentor support"],
-  },
-  {
-    title: "CBSE",
-    sub: "11th • 12th • Dropper",
-    points: ["NCERT focus", "PCB preparation", "Test discussion", "Doubt support"],
-  },
-  {
-    title: "UP",
-    sub: "Class 9th - 10th",
-    points: ["Strong basics", "Board prep", "Olympiad support", "Early foundation"],
-  },
-];
+// const courses = [
+//   {
+//     title: "ICSE",
+//     sub: "11th • 12th • Dropper",
+//     points: ["PCM focused learning", "PYQs + sheets", "Mock tests", "Mentor support"],
+//   },
+//   {
+//     title: "CBSE",
+//     sub: "11th • 12th • Dropper",
+//     points: ["NCERT focus", "PCB preparation", "Test discussion", "Doubt support"],
+//   },
+//   {
+//     title: "UP",
+//     sub: "Class 9th - 10th",
+//     points: ["Strong basics", "Board prep", "Olympiad support", "Early foundation"],
+//   },
+// ];
 
 const toppers = [
   {
     name: "Anjali Verma",
-    rank: "AIR 45 (JEE Advanced)",
+    rank: "CBSE",
     year: "2025",
     score: "99.2 Percentile",
     img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Vikash Yadav",
-    rank: "AIR 78 (NEET)",
+    rank: "CBSE",
     year: "2025",
-    score: "670/720",
+    score: "99.2 Percentile",
     img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Sneha Gupta",
-    rank: "AIR 123 (JEE Mains)",
+    rank: "CBSE",
     year: "2025",
     score: "98.6 Percentile",
     img: "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=800&q=80",
@@ -266,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* Courses */}
-      <section className="bg-flyBg">
+      {/* <section className="bg-flyBg">
         <div className="container-max py-16">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold">Courses</h2>
@@ -300,18 +300,18 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  {/* <Link
+                  <Link
                     to="/courses"
                     className="mt-6 inline-flex w-full justify-center bg-flyBlack text-white px-5 py-3 rounded-2xl font-extrabold hover:bg-black/90 transition"
                   >
                     View Details
-                  </Link> */}
+                  </Link>
                 </div>
               </motion.div>
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Results */}
       <section className="bg-white">
@@ -356,12 +356,12 @@ export default function Home() {
                     <span className="text-black/70 font-bold text-sm">{t.score}</span>
                   </div>
 
-                  <Link
+                  {/* <Link
                     to="/results"
                     className="mt-5 inline-flex w-full justify-center bg-flyBlack text-white px-5 py-3 rounded-2xl font-extrabold hover:bg-black/90 transition"
                   >
                     View Full Result
-                  </Link>
+                  </Link> */}
                 </div>
               </motion.div>
             ))}
@@ -448,7 +448,7 @@ export default function Home() {
                   <p className="mt-4 text-black/70 italic">"{t.text}"</p>
                   <div className="mt-5">
                     <p className="font-extrabold">{t.name}</p>
-                    <p className="text-sm text-black/60">{t.tag}</p>
+                    {/* <p className="text-sm text-black/60">{t.tag}</p> */}
                   </div>
                 </motion.div>
               ))}
@@ -462,7 +462,7 @@ export default function Home() {
         <div className="container-max py-16 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold">Ready to Start Your Journey?</h2>
           <p className="mt-3 text-white/75 text-lg">
-            Book your free demo class and start IIT-JEE / NEET preparation in Gorakhpur.
+            Book your free demo class and start ICSE-CBSE / UP preparation in Gorakhpur.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Link

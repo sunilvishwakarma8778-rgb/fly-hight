@@ -5,33 +5,33 @@ import { Link } from "react-router-dom";
 
 const courseData = [
   {
-    title: "IIT-JEE Coaching",
-    subtitle: "Class 11th • 12th • Dropper",
+    title: "Middle School Program",
+    subtitle: "Class 6th – 8th | ICSE • CBSE • UP Board",
     points: [
-      "Complete syllabus coverage (PCM)",
-      "PYQs + DPPs + practice sheets",
-      "Weekly tests with analysis",
-      "Doubt support + mentorship",
+      "Strong fundamentals in Maths & Science",
+      "Concept clarity with board-wise teaching",
+      "School exam focused preparation",
+      "Regular tests & doubt sessions",
     ],
   },
   {
-    title: "NEET Coaching",
-    subtitle: "Class 11th • 12th • Dropper",
+    title: "Secondary School Program",
+    subtitle: "Class 9th – 10th | ICSE • CBSE • UP Board",
     points: [
-      "NCERT focused teaching (PCB)",
-      "Mock tests + discussion",
-      "Biology concept clarity",
-      "Personal attention",
+      "Complete board syllabus coverage",
+      "Answer writing & numericals practice",
+      "Previous year questions discussion",
+      "Board pattern tests with analysis",
     ],
   },
   {
-    title: "Foundation Program",
-    subtitle: "Class 9th - 10th",
+    title: "Senior Secondary Program",
+    subtitle: "Class 11th – 12th | ICSE • CBSE • UP Board",
     points: [
-      "Strong basics + board preparation",
-      "Olympiad support",
-      "Early JEE/NEET foundation",
-      "Regular tests",
+      "In-depth subject understanding",
+      "Board exam oriented teaching approach",
+      "Regular chapter-wise & full syllabus tests",
+      "Doubt support & academic guidance",
     ],
   },
 ];
@@ -40,11 +40,14 @@ export default function Courses() {
   return (
     <div className="container-max py-12">
       <motion.div variants={stagger} initial="hidden" animate="show">
-        <motion.h1 variants={fadeUp} className="text-3xl md:text-4xl font-extrabold">
+        <motion.h1
+          variants={fadeUp}
+          className="text-3xl md:text-4xl font-extrabold"
+        >
           Courses
         </motion.h1>
         <motion.p variants={fadeUp} className="mt-2 text-black/60">
-          Choose the right course for IIT-JEE & NEET success
+          Classes 6th to 12th • ICSE • CBSE • UP Board
         </motion.p>
       </motion.div>
 
@@ -55,7 +58,7 @@ export default function Courses() {
         viewport={{ once: true, amount: 0.2 }}
         className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6"
       >
-        {courseData.map((c, idx) => (
+        {courseData.map((course, idx) => (
           <motion.div
             key={idx}
             variants={fadeUp}
@@ -63,15 +66,22 @@ export default function Courses() {
             className="bg-white rounded-3xl shadow-soft border border-black/5 overflow-hidden"
           >
             <div className="p-6 bg-gradient-to-r from-flyYellow to-flyYellowDark">
-              <h2 className="text-2xl font-extrabold">{c.title}</h2>
-              <p className="text-black/70 font-semibold">{c.subtitle}</p>
+              <h2 className="text-2xl font-extrabold">
+                {course.title}
+              </h2>
+              <p className="text-black/70 font-semibold">
+                {course.subtitle}
+              </p>
             </div>
+
             <div className="p-6">
               <ul className="space-y-3">
-                {c.points.map((p, i) => (
+                {course.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-flyYellow mt-0.5" />
-                    <span className="text-black/70">{p}</span>
+                    <span className="text-black/70">
+                      {point}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -82,6 +92,10 @@ export default function Courses() {
               >
                 Enquiry Now
               </Link>
+
+              <p className="mt-3 text-center text-xs text-black/50">
+                Teaching strictly as per ICSE, CBSE & UP Board exam pattern
+              </p>
             </div>
           </motion.div>
         ))}
