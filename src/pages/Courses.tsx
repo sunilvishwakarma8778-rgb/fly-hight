@@ -6,32 +6,63 @@ import { Link } from "react-router-dom";
 const courseData = [
   {
     title: "Middle School Program",
-    subtitle: "Class 6th – 8th | ICSE • CBSE • UP Board",
+    subtitle: "Class 6th – 8th | All Boards",
     points: [
-      "Strong fundamentals in Maths & Science",
-      "Concept clarity with board-wise teaching",
-      "School exam focused preparation",
+      "All Subjects covered",
+      "Mathematics, Science, English, Hindi, Social Science",
+      "Strong foundation & concept clarity",
       "Regular tests & doubt sessions",
     ],
   },
   {
-    title: "Secondary School Program",
-    subtitle: "Class 9th – 10th | ICSE • CBSE • UP Board",
+    title: "Secondary School Program (ICSE)",
+    subtitle: "Class 9th – 10th | ICSE Board",
     points: [
-      "Complete board syllabus coverage",
-      "Answer writing & numericals practice",
-      "Previous year questions discussion",
-      "Board pattern tests with analysis",
+      "Physics, Chemistry & Biology",
+      "Mathematics",
+      "Computer",
+      "Board exam oriented preparation",
     ],
   },
   {
-    title: "Senior Secondary Program",
-    subtitle: "Class 11th – 12th | ICSE • CBSE • UP Board",
+    title: "Secondary School Program (CBSE)",
+    subtitle: "Class 9th – 10th | CBSE Board",
     points: [
-      "In-depth subject understanding",
-      "Board exam oriented teaching approach",
-      "Regular chapter-wise & full syllabus tests",
-      "Doubt support & academic guidance",
+      "Science",
+      "Mathematics",
+      "Social Studies",
+      "Computer",
+    ],
+  },
+  {
+    title: "Senior Secondary – Commerce",
+    subtitle: "Class 11th – 12th | Commerce Stream",
+    points: [
+      "Accountancy",
+      "Economics",
+      "Business Studies",
+      "Concept clarity with exam focus",
+    ],
+  },
+  {
+    title: "Senior Secondary – Science",
+    subtitle: "Class 11th – 12th | Science Stream",
+    points: [
+      "Physics",
+      "Chemistry",
+      "Mathematics",
+      "Biology",
+      "Computer",
+    ],
+  },
+  {
+    title: "UP Board (Hindi Medium)",
+    subtitle: "Class 6th – 12th | UP Board",
+    points: [
+      "All Subjects available",
+      "Hindi Medium teaching",
+      "Board exam focused preparation",
+      "Regular tests & doubt support",
     ],
   },
 ];
@@ -39,6 +70,7 @@ const courseData = [
 export default function Courses() {
   return (
     <div className="container-max py-12">
+      {/* Heading */}
       <motion.div variants={stagger} initial="hidden" animate="show">
         <motion.h1
           variants={fadeUp}
@@ -47,10 +79,11 @@ export default function Courses() {
           Courses
         </motion.h1>
         <motion.p variants={fadeUp} className="mt-2 text-black/60">
-          Classes 6th to 12th • ICSE • CBSE • UP Board
+          Classes 6th to 12th • ICSE • CBSE • UP Board (Hindi Medium Available)
         </motion.p>
       </motion.div>
 
+      {/* Course Cards */}
       <motion.div
         variants={stagger}
         initial="hidden"
@@ -65,6 +98,7 @@ export default function Courses() {
             whileHover={{ y: -6 }}
             className="bg-white rounded-3xl shadow-soft border border-black/5 overflow-hidden"
           >
+            {/* Card Header */}
             <div className="p-6 bg-gradient-to-r from-flyYellow to-flyYellowDark">
               <h2 className="text-2xl font-extrabold">
                 {course.title}
@@ -74,6 +108,7 @@ export default function Courses() {
               </p>
             </div>
 
+            {/* Card Body */}
             <div className="p-6">
               <ul className="space-y-3">
                 {course.points.map((point, i) => (
@@ -94,7 +129,7 @@ export default function Courses() {
               </Link>
 
               <p className="mt-3 text-center text-xs text-black/50">
-                Teaching strictly as per ICSE, CBSE & UP Board exam pattern
+                Teaching strictly as per board exam pattern
               </p>
             </div>
           </motion.div>

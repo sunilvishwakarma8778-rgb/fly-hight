@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { Instagram,Facebook,PhoneCall, MapPin, MessageCircle } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  PhoneCall,
+  MapPin,
+  MessageCircle,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,18 +17,26 @@ export default function Footer() {
               <span className="text-flyYellow">Fly High</span> Classes
             </h3>
             <p className="text-white/70 mt-3 leading-relaxed">
-              Premium coaching institute for ICSE-CBSE & UP preparation in Gorakhpur.
-              Weekly tests, doubt support and personal mentorship.
+              Premium coaching institute for ICSE-CBSE & UP preparation in
+              Gorakhpur. Weekly tests, doubt support and personal mentorship.
             </p>
           </div>
 
           <div>
             <h4 className="font-bold text-flyYellow mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2 text-white/75">
-              <Link to="/" className="hover:text-flyYellow">Home</Link>
-              <Link to="/courses" className="hover:text-flyYellow">Courses</Link>
-              <Link to="/results" className="hover:text-flyYellow">Results</Link>
-              <Link to="/contact" className="hover:text-flyYellow">Contact</Link>
+              <Link to="/" className="hover:text-flyYellow">
+                Home
+              </Link>
+              <Link to="/courses" className="hover:text-flyYellow">
+                Courses
+              </Link>
+              <Link to="/results" className="hover:text-flyYellow">
+                Results
+              </Link>
+              <Link to="/contact" className="hover:text-flyYellow">
+                Contact
+              </Link>
             </div>
           </div>
 
@@ -33,7 +47,10 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-flyYellow mt-0.5" />
                 <p>FCI Road, Ashok Nagar, Gorakhpur, Uttar Pradesh</p>
               </div>
-              <a href="tel:+919956920614" className="flex items-center gap-2 hover:text-flyYellow">
+              <a
+                href="tel:+919956920614"
+                className="flex items-center gap-2 hover:text-flyYellow"
+              >
                 <PhoneCall className="w-5 h-5 text-flyYellow" />
                 +91 99569 20614
               </a>
@@ -64,8 +81,21 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-10 pt-6 text-sm text-white/60 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p>© {new Date().getFullYear()} Fly High Classes. All rights reserved.</p>
-          <p className="text-white/50">Designed for high conversions • Yellow & Black theme</p>
+          <p>
+            © {new Date().getFullYear()} Fly High Classes. All rights reserved.
+          </p>
+          <p className="text-white/50">
+            Designed by{" "}
+            <a
+              href="https://www.techssetu.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-flyYellow hover:underline"
+            >
+              TechsSetu
+            </a>{" "}
+            • Yellow & Black theme
+          </p>
         </div>
       </div>
     </footer>
