@@ -12,10 +12,26 @@ import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import { fadeUp, stagger } from "../components/Motion";
 
 const features = [
-  { icon: Award, title: "Expert Faculty", desc: "Experienced teachers focused on results" },
-  { icon: FileText, title: "Weekly Tests", desc: "Regular tests with analysis & feedback" },
-  { icon: MessageCircle, title: "Doubt Support", desc: "Daily doubt clearing + guidance" },
-  { icon: Users, title: "Mentorship", desc: "Personal attention for every student" },
+  {
+    icon: Award,
+    title: "Expert Faculty",
+    desc: "Experienced teachers focused on results",
+  },
+  {
+    icon: FileText,
+    title: "Weekly Tests",
+    desc: "Regular tests with analysis & feedback",
+  },
+  {
+    icon: MessageCircle,
+    title: "Doubt Support",
+    desc: "Daily doubt clearing + guidance",
+  },
+  {
+    icon: Users,
+    title: "Mentorship",
+    desc: "Personal attention for every student",
+  },
 ];
 
 const stats = [
@@ -96,17 +112,17 @@ const galleryImages = [
 
 const testimonials = [
   {
-    name: "Student Name",
+    name: "Ayush Singh",
     tag: "JEE / NEET Student",
     text: "Great teachers and regular tests helped me improve quickly. Doubt support is very good.",
   },
   {
-    name: "Student Name",
+    name: "Shruti Singh",
     tag: "Class 11/12",
     text: "Best coaching in Gorakhpur for serious preparation. Concepts are explained clearly.",
   },
   {
-    name: "Parent / Student",
+    name: "Anamol Pandey",
     tag: "Foundation Batch",
     text: "Good environment, personal attention and disciplined study plan.",
   },
@@ -119,7 +135,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-flyBlack to-black text-white overflow-hidden">
-        
         {/* 3D Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Glow Orbs */}
@@ -147,15 +162,25 @@ export default function Home() {
                 <span className="text-sm text-white/80">Gorakhpur • </span>
               </motion.div>
 
-              <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl font-extrabold leading-tight">
-                Crack <span className="text-flyYellow">ICSE-CBSE & UP</span> with Expert Guidance
+              <motion.h1
+                variants={fadeUp}
+                className="text-4xl md:text-5xl font-extrabold leading-tight"
+              >
+                Crack <span className="text-flyYellow">ICSE-CBSE & UP</span>{" "}
+                with Expert Guidance
               </motion.h1>
 
-              <motion.p variants={fadeUp} className="mt-5 text-lg text-white/75">
+              <motion.p
+                variants={fadeUp}
+                className="mt-5 text-lg text-white/75"
+              >
                 Daily Doubt Support • Weekly Tests • Personal Attention
               </motion.p>
 
-              <motion.div variants={fadeUp} className="mt-8 flex flex-col sm:flex-row gap-4">
+              <motion.div
+                variants={fadeUp}
+                className="mt-8 flex flex-col sm:flex-row gap-4"
+              >
                 <Link
                   to="/contact"
                   className="bg-flyYellow text-flyBlack px-7 py-4 rounded-2xl font-extrabold text-center hover:bg-flyYellowDark transition"
@@ -188,7 +213,9 @@ export default function Home() {
               </div>
               <div className="absolute -bottom-6 left-6 bg-white text-flyBlack rounded-2xl shadow-soft px-5 py-4 border border-black/10">
                 <p className="font-extrabold">Limited Seats</p>
-                <p className="text-sm text-black/60">Early admission benefits available</p>
+                <p className="text-sm text-black/60">
+                  Early admission benefits available
+                </p>
               </div>
             </motion.div>
           </div>
@@ -229,7 +256,9 @@ export default function Home() {
       <section className="bg-white">
         <div className="container-max py-16">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold">Our Achievements</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold">
+              Our Achievements
+            </h2>
             <p className="mt-3 text-black/60">
               Trusted by students for IIT-JEE & NEET preparation in Gorakhpur
             </p>
@@ -262,6 +291,78 @@ export default function Home() {
               </motion.div>
             ))}
           </motion.div>
+        </div>
+      </section>
+      {/* Fees */}
+      <section className="bg-flyBg">
+        <div className="container-max py-16">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold">
+              Fee Structure
+            </h2>
+           <p className="mt-3 text-xl font-bold text-black">
+              1 Year Completed Education Plan (2025-2026)
+            </p>
+          </div>
+
+          {/* MOBILE VIEW FEE (Cards) */}
+          <div className="mt-10 space-y-4 md:hidden">
+            {[
+              ["6th, 7th & 8th", "₹24,000"],
+              ["9th & 10th (UP Board)", "₹18,000"],
+              ["9th & 10th (CBSE)", "₹24,000"],
+              ["9th & 10th (ICSE)", "₹30,000"],
+              ["11th & 12th (Commerce)", "₹24,000"],
+              ["11th & 12th (UP Board)", "₹24,000"],
+              ["11th & 12th (PCM/B)", "₹36,000"],
+              ["Computer", "₹12,000"],
+            ].map(([cls, fee], idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl p-4 shadow-soft border border-black/5 flex items-center justify-between"
+              >
+                <span className="font-semibold text-sm">{cls}</span>
+                <span className="font-extrabold text-flyBlack">{fee}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* DESKTOP VIEW (Table) */}
+          <div className="mt-10 hidden md:block overflow-x-auto">
+            <table className="w-full bg-white rounded-3xl shadow-soft border border-black/5 overflow-hidden">
+              <thead className="bg-gradient-to-r from-flyYellow to-flyYellowDark text-flyBlack">
+                <tr>
+                  <th className="p-4 text-left font-extrabold">Class</th>
+                  <th className="p-4 text-right font-extrabold">Fees</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["4th & 5th", "₹15,000"],
+                  ["6th, 7th & 8th", "₹24,000"],
+                  ["9th & 10th (UP Board)", "₹18,000"],
+                  ["9th & 10th (CBSE)", "₹24,000"],
+                  ["9th & 10th (ICSE)", "₹30,000"],
+                  ["11th & 12th (Commerce)", "₹24,000"],
+                  ["11th & 12th (UP Board)", "₹24,000"],
+                  ["11th & 12th (PCM/B)", "₹36,000"],
+                  ["Computer", "₹12,000"],
+                ].map(([cls, fee], idx) => (
+                  <tr key={idx} className="border-t hover:bg-flyBg transition">
+                    <td className="p-4 font-semibold">{cls}</td>
+                    <td className="p-4 text-right font-extrabold">{fee}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-6 text-center text-sm text-black/100">
+            Registration Fee: <strong>₹1000</strong> (Bag, ID Card, T-Shirt
+            included)
+          </p>
+
+          <div className="mt-8 text-center"></div>
         </div>
       </section>
 
@@ -343,7 +444,9 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <p className="text-white font-extrabold text-lg">{t.name}</p>
+                    <p className="text-white font-extrabold text-lg">
+                      {t.name}
+                    </p>
                     <p className="text-white/80 text-sm">{t.rank}</p>
                   </div>
                 </div>
@@ -353,7 +456,9 @@ export default function Home() {
                     <span className="bg-flyYellow text-flyBlack px-4 py-2 rounded-2xl font-extrabold text-sm">
                       {t.year}
                     </span>
-                    <span className="text-black/70 font-bold text-sm">{t.score}</span>
+                    <span className="text-black/70 font-bold text-sm">
+                      {t.score}
+                    </span>
                   </div>
 
                   {/* <Link
@@ -383,7 +488,9 @@ export default function Home() {
         <div className="container-max py-16">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold">Gallery</h2>
-            <p className="mt-3 text-black/60">Glimpses of our classroom and student activities</p>
+            <p className="mt-3 text-black/60">
+              Glimpses of our classroom and student activities
+            </p>
           </div>
 
           <motion.div
@@ -401,7 +508,11 @@ export default function Home() {
                 className="relative rounded-3xl overflow-hidden shadow-soft border border-black/5"
                 onClick={() => window.open(img, "_blank")}
               >
-                <img src={img} alt={`Gallery ${idx + 1}`} className="w-full h-[200px] object-cover" />
+                <img
+                  src={img}
+                  alt={`Gallery ${idx + 1}`}
+                  className="w-full h-[200px] object-cover"
+                />
                 <div className="absolute inset-0 bg-black/10 hover:bg-black/0 transition" />
               </motion.button>
             ))}
@@ -422,8 +533,12 @@ export default function Home() {
       <section className="bg-flyBg">
         <div className="container-max py-16">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold">Testimonials</h2>
-            <p className="mt-3 text-black/60">What students say about Fly High Classes</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold">
+              Testimonials
+            </h2>
+            <p className="mt-3 text-black/60">
+              What students say about Fly High Classes
+            </p>
           </div>
 
           <motion.div
@@ -442,7 +557,10 @@ export default function Home() {
                 >
                   <div className="flex gap-1">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-flyYellow fill-flyYellow" />
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-flyYellow fill-flyYellow"
+                      />
                     ))}
                   </div>
                   <p className="mt-4 text-black/70 italic">"{t.text}"</p>
@@ -460,9 +578,12 @@ export default function Home() {
       {/* CTA */}
       <section className="bg-gradient-to-br from-flyBlack to-black text-white">
         <div className="container-max py-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold">Ready to Start Your Journey?</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold">
+            Ready to Start Your Journey?
+          </h2>
           <p className="mt-3 text-white/75 text-lg">
-            Book your free demo class and start ICSE-CBSE / UP preparation in Gorakhpur.
+            Book your free demo class and start ICSE-CBSE / UP preparation in
+            Gorakhpur.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Link

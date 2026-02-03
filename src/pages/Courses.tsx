@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const courseData = [
   {
-    title: "Middle School Program",
+    title: "NURTURE",
     subtitle: "Class 6th – 8th | All Boards",
     points: [
       "All Subjects covered",
@@ -15,17 +15,19 @@ const courseData = [
     ],
   },
   {
-    title: "Secondary School Program (ICSE)",
+    title: "PRE FOUNDATION (ICSE)",
     subtitle: "Class 9th – 10th | ICSE Board",
     points: [
-      "Physics, Chemistry & Biology",
+      "Physics",
+      "Chemistry",
+      "Biology",
       "Mathematics",
       "Computer",
       "Board exam oriented preparation",
     ],
   },
   {
-    title: "Secondary School Program (CBSE)",
+    title: "PRE FOUNDATION (CBSE)",
     subtitle: "Class 9th – 10th | CBSE Board",
     points: [
       "Science",
@@ -34,8 +36,18 @@ const courseData = [
       "Computer",
     ],
   },
+   {
+    title: "PRE FOUNDATION ",
+    subtitle: "Class 9th – 10th UP BOARD HINDI MEDIUM",
+    points: [
+      "Science",
+      "Mathematics",
+      "Social Studies",
+      "Computer",
+    ],
+  },
   {
-    title: "Senior Secondary – Commerce",
+    title: "FOUNDATION",
     subtitle: "Class 11th – 12th | Commerce Stream",
     points: [
       "Accountancy",
@@ -45,8 +57,8 @@ const courseData = [
     ],
   },
   {
-    title: "Senior Secondary – Science",
-    subtitle: "Class 11th – 12th | Science Stream",
+    title: "FOUNDATION",
+    subtitle: "Class 11th – 12th | Science / Math",
     points: [
       "Physics",
       "Chemistry",
@@ -56,8 +68,8 @@ const courseData = [
     ],
   },
   {
-    title: "UP Board (Hindi Medium)",
-    subtitle: "Class 6th – 12th | UP Board",
+    title: "FOUNDATION",
+    subtitle: " UP Board (Hindi Medium) Class 11th – 12th ",
     points: [
       "All Subjects available",
       "Hindi Medium teaching",
@@ -103,7 +115,7 @@ export default function Courses() {
               <h2 className="text-2xl font-extrabold">
                 {course.title}
               </h2>
-              <p className="text-black/70 font-semibold">
+              <p className="text-black/180 font-semibold">
                 {course.subtitle}
               </p>
             </div>
