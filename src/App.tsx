@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
-import Results from "./pages/Results";
+import Fees from "./pages/Fees";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -16,7 +16,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/results" element={<Results />} />
+          <Route path="/fees" element={<Fees />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

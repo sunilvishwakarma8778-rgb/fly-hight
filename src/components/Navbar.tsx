@@ -7,7 +7,7 @@ import fhLogo from "../assets/images/fhlogo.png";
 const navItems = [
   { to: "/", label: "Home" },
   { to: "/courses", label: "Courses" },
-  { to: "/results", label: "Results" },
+  { to: "/fees", label: "Fees" },
   { to: "/contact", label: "Contact" },
 ];
 

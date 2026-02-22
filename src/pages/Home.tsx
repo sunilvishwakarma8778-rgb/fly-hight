@@ -11,6 +11,15 @@ import {
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import { fadeUp, stagger } from "../components/Motion";
 
+import g1 from "../assets/images/g1.jpeg";
+import g2 from "../assets/images/g2.jpeg";
+import g3 from "../assets/images/g3.jpeg";
+import g4 from "../assets/images/g4.jpeg";
+import g5 from "../assets/images/g5.jpeg";
+import g6 from "../assets/images/g6.jpeg";
+
+import heroImage from "../assets/images/header.jpeg";
+
 const features = [
   {
     icon: Award,
@@ -41,89 +50,60 @@ const stats = [
   { value: 10, label: "Years Experience", suffix: "+" },
 ];
 
-// const courses = [
-//   {
-//     title: "ICSE",
-//     sub: "11th • 12th • Dropper",
-//     points: ["PCM focused learning", "PYQs + sheets", "Mock tests", "Mentor support"],
-//   },
-//   {
-//     title: "CBSE",
-//     sub: "11th • 12th • Dropper",
-//     points: ["NCERT focus", "PCB preparation", "Test discussion", "Doubt support"],
-//   },
-//   {
-//     title: "UP",
-//     sub: "Class 9th - 10th",
-//     points: ["Strong basics", "Board prep", "Olympiad support", "Early foundation"],
-//   },
-// ];
-
 const toppers = [
   {
-    name: "Anjali Verma",
-    rank: "CBSE",
-    year: "2025",
-    score: "99.2 Percentile",
-    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    name: "Prakhar Srivastva",
+    year: "Class 12 TOPPER",
+    score: "94.00 %",
+    img: "src/assets/images/TOPPER1.png",
   },
   {
-    name: "Vikash Yadav",
-    rank: "CBSE",
-    year: "2025",
-    score: "99.2 Percentile",
-    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    name: "Vinayak Singh",
+    year: "Class 12 TOPPER",
+    score: "94.00 %",
+    img: "src/assets/images/TOPPER2.jpeg",
   },
   {
-    name: "Sneha Gupta",
-    rank: "CBSE",
-    year: "2025",
-    score: "98.6 Percentile",
-    img: "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=800&q=80",
+    name: "Kaushiki Shukla",
+    year: "Class 12 TOPPER",
+    score: "90.75 %",
+    img: "src/assets/images/TOPPER3.png",
   },
+{
+    name: "Saubhagya Singh",
+    year: "Class 10 ICSE TOPPER",
+    score: "94.00 %",
+    img: "src/assets/images/TOPPER4.png",
+  },
+{
+    name: "Shaurya Srivastava",
+    year: "Class 10 TOPPER",
+    score: "94.00 %",
+    img: "src/assets/images/TOPPER5.jpeg",
+  },
+{
+    name: "Apoorva Prajapati",
+    year: "Class 10 TOPPER",
+    score: "93.00 %",
+    img: "src/assets/images/TOPPER6.jpeg",
+  },
+
+  
 ];
 
-const flyHighPhotos = [
-  {
-    title: "Classroom Session",
-    desc: "Focused learning environment",
-    img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Weekly Test Series",
-    desc: "Regular tests & performance tracking",
-    img: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Doubt Clearing",
-    desc: "Personal mentorship & guidance",
-    img: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
-  },
-];
-
-const galleryImages = [
-  "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1542725752-e9f7259b3881?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-];
+const galleryImages = [g1, g2, g3, g4, g5, g6];
 
 const testimonials = [
   {
-    name: "Ayush Singh",
-    tag: "JEE / NEET Student",
+    name: "Apoorva Prajapati",
     text: "Great teachers and regular tests helped me improve quickly. Doubt support is very good.",
   },
   {
-    name: "Shruti Singh",
-    tag: "Class 11/12",
+    name: "Prakhar Srivastava",
     text: "Best coaching in Gorakhpur for serious preparation. Concepts are explained clearly.",
   },
   {
-    name: "Anamol Pandey",
-    tag: "Foundation Batch",
+    name: "Vinayak Singh",
     text: "Good environment, personal attention and disciplined study plan.",
   },
 ];
@@ -206,7 +186,7 @@ export default function Home() {
             >
               <div className="rounded-3xl overflow-hidden shadow-soft border border-white/10">
                 <img
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                  src={heroImage}
                   alt="Students studying"
                   className="w-full h-[320px] md:h-[420px] object-cover"
                 />
@@ -293,126 +273,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      {/* Fees */}
-      <section className="bg-flyBg">
-        <div className="container-max py-16">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold">
-              Fee Structure
-            </h2>
-           <p className="mt-3 text-xl font-bold text-black">
-              1 Year Completed Education Plan (2025-2026)
-            </p>
-          </div>
-
-          {/* MOBILE VIEW FEE (Cards) */}
-          <div className="mt-10 space-y-4 md:hidden">
-            {[
-              ["6th, 7th & 8th", "₹24,000"],
-              ["9th & 10th (UP Board)", "₹18,000"],
-              ["9th & 10th (CBSE)", "₹24,000"],
-              ["9th & 10th (ICSE)", "₹30,000"],
-              ["11th & 12th (Commerce)", "₹24,000"],
-              ["11th & 12th (UP Board)", "₹24,000"],
-              ["11th & 12th (PCM/B)", "₹36,000"],
-              ["Computer", "₹12,000"],
-            ].map(([cls, fee], idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-4 shadow-soft border border-black/5 flex items-center justify-between"
-              >
-                <span className="font-semibold text-sm">{cls}</span>
-                <span className="font-extrabold text-flyBlack">{fee}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* DESKTOP VIEW (Table) */}
-          <div className="mt-10 hidden md:block overflow-x-auto">
-            <table className="w-full bg-white rounded-3xl shadow-soft border border-black/5 overflow-hidden">
-              <thead className="bg-gradient-to-r from-flyYellow to-flyYellowDark text-flyBlack">
-                <tr>
-                  <th className="p-4 text-left font-extrabold">Class</th>
-                  <th className="p-4 text-right font-extrabold">Fees</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["4th & 5th", "₹15,000"],
-                  ["6th, 7th & 8th", "₹24,000"],
-                  ["9th & 10th (UP Board)", "₹18,000"],
-                  ["9th & 10th (CBSE)", "₹24,000"],
-                  ["9th & 10th (ICSE)", "₹30,000"],
-                  ["11th & 12th (Commerce)", "₹24,000"],
-                  ["11th & 12th (UP Board)", "₹24,000"],
-                  ["11th & 12th (PCM/B)", "₹36,000"],
-                  ["Computer", "₹12,000"],
-                ].map(([cls, fee], idx) => (
-                  <tr key={idx} className="border-t hover:bg-flyBg transition">
-                    <td className="p-4 font-semibold">{cls}</td>
-                    <td className="p-4 text-right font-extrabold">{fee}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <p className="mt-6 text-center text-sm text-black/100">
-            Registration Fee: <strong>₹1000</strong> (Bag, ID Card, T-Shirt
-            included)
-          </p>
-
-          <div className="mt-8 text-center"></div>
-        </div>
-      </section>
-
-      {/* Courses */}
-      {/* <section className="bg-flyBg">
-        <div className="container-max py-16">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold">Courses</h2>
-            <p className="mt-3 text-black/60">Choose the right program for your goal</p>
-          </div>
-
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
-            className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {courses.map((c, idx) => (
-              <motion.div
-                key={idx}
-                variants={fadeUp}
-                whileHover={{ y: -6 }}
-                className="bg-white rounded-3xl shadow-soft border border-black/5 overflow-hidden"
-              >
-                <div className="p-6 bg-gradient-to-r from-flyYellow to-flyYellowDark">
-                  <h3 className="text-2xl font-extrabold">{c.title}</h3>
-                  <p className="text-black/70 font-semibold">{c.sub}</p>
-                </div>
-                <div className="p-6">
-                  <ul className="space-y-3">
-                    {c.points.map((p, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 text-flyYellow mt-0.5" />
-                        <span className="text-black/70">{p}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    to="/courses"
-                    className="mt-6 inline-flex w-full justify-center bg-flyBlack text-white px-5 py-3 rounded-2xl font-extrabold hover:bg-black/90 transition"
-                  >
-                    View Details
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section> */}
 
       {/* Results */}
       <section className="bg-white">
@@ -430,13 +290,8 @@ export default function Home() {
             className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6"
           >
             {toppers.map((t, idx) => (
-              <motion.div
-                key={idx}
-                variants={fadeUp}
-                whileHover={{ y: -6 }}
-                className="bg-white rounded-3xl shadow-soft border border-black/5 overflow-hidden"
-              >
-                <div className="relative h-[220px] overflow-hidden">
+              <motion.div key={idx} variants={fadeUp} whileHover={{ y: -6 }}>
+                <div className="relative h-[360px] md:h-[440px] overflow-hidden">
                   <img
                     src={t.img}
                     alt={t.name}
@@ -474,10 +329,10 @@ export default function Home() {
 
           <div className="mt-8 text-center">
             <Link
-              to="/results"
+              to="/fees"
               className="inline-flex bg-flyYellow text-flyBlack px-6 py-3 rounded-2xl font-extrabold hover:bg-flyYellowDark transition"
             >
-              View All Results
+              View Fees
             </Link>
           </div>
         </div>

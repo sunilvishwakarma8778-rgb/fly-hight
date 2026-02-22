@@ -31,8 +31,8 @@ export default function Footer() {
               <Link to="/courses" className="hover:text-flyYellow">
                 Courses
               </Link>
-              <Link to="/results" className="hover:text-flyYellow">
-                Results
+              <Link to="/fees" className="hover:text-flyYellow">
+                Fees
               </Link>
               <Link to="/contact" className="hover:text-flyYellow">
                 Contact
