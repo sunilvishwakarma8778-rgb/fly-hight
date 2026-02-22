@@ -69,26 +69,24 @@ const toppers = [
     score: "90.75 %",
     img: "src/assets/images/TOPPER3.png",
   },
-{
+  {
     name: "Saubhagya Singh",
     year: "Class 10 ICSE TOPPER",
     score: "94.00 %",
     img: "src/assets/images/TOPPER4.png",
   },
-{
+  {
     name: "Shaurya Srivastava",
     year: "Class 10 TOPPER",
     score: "94.00 %",
     img: "src/assets/images/TOPPER5.jpeg",
   },
-{
+  {
     name: "Apoorva Prajapati",
     year: "Class 10 TOPPER",
     score: "93.00 %",
     img: "src/assets/images/TOPPER6.jpeg",
   },
-
-  
 ];
 
 const galleryImages = [g1, g2, g3, g4, g5, g6];
@@ -301,8 +299,7 @@ export default function Home() {
                   <div className="absolute bottom-4 left-4 right-4">
                     <p className="text-white font-extrabold text-lg">
                       {t.name}
-                    </p>
-                    <p className="text-white/80 text-sm">{t.rank}</p>
+                    </p>s
                   </div>
                 </div>
 
