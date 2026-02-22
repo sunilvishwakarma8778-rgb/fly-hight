@@ -18,12 +18,12 @@ import g4 from "../assets/images/g4.jpeg";
 import g5 from "../assets/images/g5.jpeg";
 import g6 from "../assets/images/g6.jpeg";
 
-import topper1 from "../assets/images/TOPPER1.png";
-import topper2 from "../assets/images/TOPPER2.jpeg";
-import topper3 from "../assets/images/TOPPER3.png";
-import topper4 from "../assets/images/TOPPER4.png";
-import topper5 from "../assets/images/TOPPER5.jpeg";
-import topper6 from "../assets/images/TOPPER6.jpeg";
+import topper1 from "../assets/images/topper1.png";
+import topper2 from "../assets/images/topper2.jpeg";
+import topper3 from "../assets/images/topper3.png";
+import topper4 from "../assets/images/topper4.png";
+import topper5 from "../assets/images/topper5.jpeg";
+import topper6 from "../assets/images/topper6.jpeg";
 
 import heroImage from "../assets/images/header.jpeg";
 
