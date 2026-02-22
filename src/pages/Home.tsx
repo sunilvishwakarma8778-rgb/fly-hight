@@ -18,6 +18,13 @@ import g4 from "../assets/images/g4.jpeg";
 import g5 from "../assets/images/g5.jpeg";
 import g6 from "../assets/images/g6.jpeg";
 
+import topper1 from "../assets/images/TOPPER1.png";
+import topper2 from "../assets/images/TOPPER2.jpeg";
+import topper3 from "../assets/images/TOPPER3.png";
+import topper4 from "../assets/images/TOPPER4.png";
+import topper5 from "../assets/images/TOPPER5.jpeg";
+import topper6 from "../assets/images/TOPPER6.jpeg";
+
 import heroImage from "../assets/images/header.jpeg";
 
 const features = [
@@ -55,37 +62,37 @@ const toppers = [
     name: "Prakhar Srivastva",
     year: "Class 12 TOPPER",
     score: "94.00 %",
-    img: "src/assets/images/TOPPER1.png",
+    img: topper1,
   },
   {
     name: "Vinayak Singh",
     year: "Class 12 TOPPER",
     score: "94.00 %",
-    img: "src/assets/images/TOPPER2.jpeg",
+    img: topper2,
   },
   {
     name: "Kaushiki Shukla",
     year: "Class 12 TOPPER",
     score: "90.75 %",
-    img: "src/assets/images/TOPPER3.png",
+    img: topper3,
   },
   {
     name: "Saubhagya Singh",
     year: "Class 10 ICSE TOPPER",
     score: "94.00 %",
-    img: "src/assets/images/TOPPER4.png",
+    img: topper4,
   },
   {
     name: "Shaurya Srivastava",
     year: "Class 10 TOPPER",
     score: "94.00 %",
-    img: "src/assets/images/TOPPER5.jpeg",
+    img: topper5,
   },
   {
     name: "Apoorva Prajapati",
     year: "Class 10 TOPPER",
     score: "93.00 %",
-    img: "src/assets/images/TOPPER6.jpeg",
+    img: topper6,
   },
 ];
 
@@ -299,7 +306,7 @@ export default function Home() {
                   <div className="absolute bottom-4 left-4 right-4">
                     <p className="text-white font-extrabold text-lg">
                       {t.name}
-                    </p>s
+                    </p>
                   </div>
                 </div>
 
