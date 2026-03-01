@@ -25,7 +25,7 @@ export default function Results() {
               Fee Structure
             </h2>
             <p className="mt-3 text-xl font-bold text-black">
-              1 Year Completed Education Plan (2025–2026)
+              1 Year Complete Education Plan (2025–2026)
             </p>
           </div>
 
